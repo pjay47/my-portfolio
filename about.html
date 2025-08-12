@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Shubham Patel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Shubham Patel</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a class="active" href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="{{ url_for('static', filename='images/shubham4.jpg') }}" alt="Shubham Patel">
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Hello! I’m <strong>Shubham Patel</strong>, a passionate <span>Python Programmer</span> and <span>Flask Web Developer</span>.  
+                   I love creating unique, functional, and visually appealing digital experiences that deliver results.  
+                   With a strong focus on clean code and modern design trends, I ensure every project is crafted with care.
+                </p>
+                <a href="/contact" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-bar">
+            <p>Python Programming</p>
+            <div class="progress"><span style="width: 95%;"></span></div>
+        </div>
+        <div class="skill-bar">
+            <p>Flask Web Development</p>
+            <div class="progress"><span style="width: 90%;"></span></div>
+        </div>
+        <div class="skill-bar">
+            <p>HTML, CSS & JavaScript</p>
+            <div class="progress"><span style="width: 85%;"></span></div>
+        </div>
+    </section>
+
+    <!-- Experience Cards -->
+    <section class="experience">
+        <h2>Why Work With Me?</h2>
+        <div class="exp-container">
+            <div class="exp-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Creative Ideas</h3>
+                <p>Innovative designs with unique functionality for every client.</p>
+            </div>
+            <div class="exp-card">
+                <i class="fas fa-code"></i>
+                <h3>Clean Code</h3>
+                <p>Well-structured and optimized code for fast performance.</p>
+            </div>
+            <div class="exp-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Dedicated support to keep your project running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Shubham Patel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.about-container, .skills, .experience', {
+            duration: 1000,
+            distance: '50px',
+            easing: 'ease-in-out',
+            origin: 'bottom',
+            reset: false
+        });
+    </script>
+</body>
+</html>
